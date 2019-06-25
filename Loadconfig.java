@@ -74,7 +74,7 @@ public class Loadconfig {
 
 		//config,configEnable
 		
-		for(int i=0;i<lad.sensorNum;i++) {
+		for(int i=0;i<lad.getSensorNum();i++) {
 			load( threshold, lad, i);
 			//config
 			sop("config" );
@@ -159,14 +159,7 @@ public class Loadconfig {
 		System.out.println(obj);
 	}
 }
-class ladder{
-	public int sensorNum;
-	public int startNum;//芯片配置起始文件号
-	public ladder(int sensorNum,int startNum) {
-		this.sensorNum=sensorNum;
-		this.startNum=startNum;
-	}
-}
+
 
 
 
